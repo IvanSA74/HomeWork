@@ -1,0 +1,35 @@
+.body{
+    background-color: black;
+}
+.header{
+    background-color: black;
+}
+.name{
+    background-color: black;
+}
+.foto{
+    float: left;
+}
+.logo_table{
+    display: inline;
+}
+.logo{
+    display: inline;
+}
+.textname{
+    color: mediumseagreen;
+}
+.recom{
+    color: lightgreen;
+    float: right;
+    width: 30%;
+    font-family: cursive;
+    font-size: x-large;
+}
+.infotext{
+    color: lightgreen;
+    float: left;
+    width: 30%;
+    font-family: cursive;
+    font-size: large;
+}
