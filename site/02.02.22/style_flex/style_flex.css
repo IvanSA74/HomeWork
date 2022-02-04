@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+}
+.picture{
+    justify-content: space-around;
+    padding: 100px;
+
+}
+.txt{
+    font-size: large;
+    font-family: "Comic Sans MS";
+    color: mediumseagreen;
+}
