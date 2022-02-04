@@ -8,7 +8,7 @@
 .abbr1, .abbr2, .abbr7, .abbr8, .abbr9, .abbr10, .abbr15, .abbr16{
     float: left;
 }
-.abbr3, .abbr4, .abbr5, .abbr6, .abbr11, .abbr12, .abbr13, .abbr14, .elem3, .elem4, .elem5, .elem6, .elem11, .elem12, .elem13, .elem14, .number1, .number2, .number7, .number8, .number9,  .number15, .number16{
+.abbr3, .abbr4, .abbr5, .abbr6, .abbr11, .abbr12, .abbr13, .abbr14, .elem3, .elem4, .elem5, .elem6, .elem11, .elem12, .elem13, .elem14, .number1, .number2, .number7, .number8, .number9, .number10, .number15, .number16{
     float: right;
 }
 .abbr1, .abbr2, .abbr7, .abbr8, .abbr9, .abbr10, .abbr15, .abbr16, .abbr3, .abbr4, .abbr5, .abbr6, .abbr11, .abbr12, .abbr13, .abbr14{
