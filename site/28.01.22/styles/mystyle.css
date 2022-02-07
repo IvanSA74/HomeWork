@@ -1,62 +1,86 @@
 .body{
+    display: grid;
+    grid-gap: 10px;
     background-color: black;
 }
-.header{
+header{
     background-color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) minmax(120px, 120px);
 }
-.name{
+.main{
     background-color: black;
+    display: grid;
+    grid-template-columns: 480px 1fr;
 }
 .foto{
-    float: left;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: minmax(360px, 480px);
+}
+.info{
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "textname textname"
+            "infotext recom";
+    justify-items: center;
+
+
 }
 .textname{
-    color: mediumseagreen;
-}
-.recom{
-    color: lightgreen;
-    float: right;
-    width: 30%;
     font-family: cursive;
-    font-size: x-large;
+    font-size: 70px;
+    color: mediumseagreen;
+    grid-area: textname;
 }
 .infotext{
     color: lightgreen;
-    float: left;
-    width: 30%;
     font-family: cursive;
-    font-size: large;
+    font-size: 20px;
+    grid-area: infotext;
 }
+.recom{
+    color: lightgreen;
+    font-family: cursive;
+    font-size: 30px;
+    grid-area: recom;
+}
+
 .container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: start;
 }
 .picture{
-    justify-content: space-around;
-    padding: 100px;
-
+    display: grid;
+    max-height: 100%;
 }
 .txt{
-    font-size: large;
+    font-size: 20px;
     font-family: "Comic Sans MS";
     color: mediumseagreen;
 }
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 30% 20%;
+    justify-items: center;
+    align-items: end;
+}
 .it_people1, .it_people2, .it_people5, .it_people6{
     display: grid;
-    height: 400px;
-    justify-content: center;
+    margin: 10px;
 }
 .it_people3, .it_people4, .it_people7, .it_people8{
+    display: grid;
     height: 200px;
     color: mediumseagreen;
     font-size: x-large;
     font-family: "Comic Sans MS";
-}
-.grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 20% 30% 20%;
-    grid-gap: 20px;
+
 }
