@@ -1,0 +1,62 @@
+.body{
+    background-color: black;
+}
+.header{
+    background-color: black;
+    display: flex;
+}
+.name{
+    background-color: black;
+}
+.foto{
+    float: left;
+}
+.textname{
+    color: mediumseagreen;
+}
+.recom{
+    color: lightgreen;
+    float: right;
+    width: 30%;
+    font-family: cursive;
+    font-size: x-large;
+}
+.infotext{
+    color: lightgreen;
+    float: left;
+    width: 30%;
+    font-family: cursive;
+    font-size: large;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.picture{
+    justify-content: space-around;
+    padding: 100px;
+
+}
+.txt{
+    font-size: large;
+    font-family: "Comic Sans MS";
+    color: mediumseagreen;
+}
+.it_people1, .it_people2, .it_people5, .it_people6{
+    display: grid;
+    height: 400px;
+    justify-content: center;
+}
+.it_people3, .it_people4, .it_people7, .it_people8{
+    height: 200px;
+    color: mediumseagreen;
+    font-size: x-large;
+    font-family: "Comic Sans MS";
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 30% 20%;
+    grid-gap: 20px;
+}
