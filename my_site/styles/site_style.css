@@ -3,7 +3,7 @@
     grid-gap: 10px;
     background-color: black;
 }
-header{
+.header{
     background-color: black;
     display: grid;
     grid-template-columns: minmax(150px, 200px) minmax(120px, 120px);
@@ -11,13 +11,27 @@ header{
 .main{
     background-color: black;
     display: grid;
-    grid-template-columns: 480px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+@media  all and (max-width: 720px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }
 .foto{
     display:grid;
     grid-gap: 10px;
     grid-template-columns: minmax(360px, 480px);
 }
+@media  all and (max-width: 720px) {
+    .foto{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 10px;}
+    }
 .info{
     display: grid;
     padding: 10px;
@@ -27,9 +41,7 @@ header{
             "textname textname"
             "infotext recom";
     justify-items: center;
-
-
-}
+    }
 .textname{
     font-family: cursive;
     font-size: 70px;
@@ -48,22 +60,34 @@ header{
     font-size: 30px;
     grid-area: recom;
 }
-
 .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-items: center;
     align-items: start;
 }
-.picture{
-    display: grid;
-    max-height: 100%;
+@media all and (max-width: 767px) {
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;}
+        .txt1{
+            grid-row-start: 2;
+            grid-column-start: 1;
+        }
+        .txt2{
+            grid-row-start: 2;
+            grid-column-start: 2;
+        }
 }
-.txt{
+.picture{
+}
+.txt1, .txt2, .txt3, .txt4{
     font-size: 20px;
     font-family: "Comic Sans MS";
     color: mediumseagreen;
 }
+
 .grid{
     display: grid;
     grid-gap: 10px;
@@ -76,11 +100,26 @@ header{
     display: grid;
     margin: 10px;
 }
-.it_people3, .it_people4, .it_people7, .it_people8{
+.it_people3, .it_people4, .it_people7, .it_people8 {
     display: grid;
     height: 200px;
     color: mediumseagreen;
+    padding: 10px;
     font-size: x-large;
     font-family: "Comic Sans MS";
-
 }
+@media all and (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 10% 20% 10% 20% 10% 20% 10%;
+    }
+    .it_people3 {
+        grid-row-start: 2;
+    }
+    .it_people7{
+        grid-row-start: 6;
+    }
+}
+
+
+

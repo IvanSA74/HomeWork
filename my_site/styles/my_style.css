@@ -1,0 +1,104 @@
+.body{
+    display: grid;
+    grid-gap: 10px;
+    background-color: black;
+}
+
+.header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) minmax(120px, 120px);
+}
+.main{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media  all and (max-width: 720px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+.foto{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: minmax(360px, 480px);
+}
+@media  all and (max-width: 720px) {
+    .foto{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 10px;
+    }
+    .info{
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "textname textname"
+            "infotext recom";
+        justify-items: center;
+    }
+    .textname{
+        font-family: cursive;
+        font-size: 70px;
+        color: mediumseagreen;
+        grid-area: textname;
+    }
+    .infotext{
+        color: lightgreen;
+        font-family: cursive;
+        font-size: 20px;
+        grid-area: infotext;
+    }
+    .recom{
+        color: lightgreen;
+        font-family: cursive;
+        font-size: 30px;
+        grid-area: recom;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        align-items: start;
+    }
+    @media all and (max-width: 767px) {
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+        }
+    }
+    .picture{
+    }
+    .txt{
+        font-size: 20px;
+        font-family: "Comic Sans MS";
+        color: mediumseagreen;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 20% 30% 20%;
+        justify-items: center;
+        align-items: end;
+    }
+    .it_people1, .it_people2, .it_people5, .it_people6{
+        display: grid;
+        margin: 10px;
+    }
+    .it_people3, .it_people4, .it_people7, .it_people8 {
+        display: grid;
+        height: 200px;
+        color: mediumseagreen;
+        padding: 10px;
+        font-size: x-large;
+        font-family: "Comic Sans MS";}
