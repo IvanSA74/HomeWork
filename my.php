@@ -7,6 +7,15 @@
     <title>Сафронов Иван</title>
 </head>
 <body class="body">
+<?
+if( date('T') < 8) {
+    $time = 'morning.jpg';
+}
+elseif (date('T')<20) {
+    $time = 'night.jpg';
+}
+echo '<img src="\php.ru\HomeWork\my_site/img/'. $time .'">';
+?>
     <header class="header">
          <div class="logo"> <img src="img/logo.jpg" alt="LOGO" height="150" width="200">
          </div>
