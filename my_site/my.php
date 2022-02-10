@@ -1,8 +1,6 @@
 <?
-function example ($time)
-{
-    return $time * $time;
-}
+date_default_timezone_set('Asia/Ekaterinburg');
+$now=getdate();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +10,7 @@ function example ($time)
         <meta name="viewport" content="width=device-width">
     <title>Сафронов Иван</title>
 </head>
-<body class="body">
+<body class="body" >
     <header class="header">
          <div class="logo"> <img src="img/logo.jpg" alt="LOGO" height="150" width="200">
          </div>
@@ -20,16 +18,16 @@ function example ($time)
             <a href="../31.01.22/table.html" title="mini" target="_blank"><img src="img/logtable.png" width="120" height="120" alt="Таблица"></a>
         </div>
     </header>
+    <?
+    $now = date('H');
+    if ($now < 8 or $now > 20 ) {
+        echo  '<img src="img/night.jpg" alt="no_n" height="200" width="480">';
+    }
+    elseif ($now < 20 or $now > 8) {
+        echo '<img src="img/morning.jpg" alt="no_m" height="200" width="480">';
+    }
 
-<?
-if (date('T') < 8) {
-    $time = 'morning.jpg';
-}
-elseif (date('T') < 20) {
-    $time = 'night.jpg';
-}
-echo '<img alt="время суток" height="100" width="500" src="/php.ru/HomeWork/img/' . $time . '">'
-?>
+    ?>
     <main class="main">
     <div class="foto">
         <img src="img/ava.jpg" alt="foto" height="480" width="480">
