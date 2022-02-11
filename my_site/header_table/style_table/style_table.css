@@ -1,0 +1,35 @@
+.td1, .td2, .td3, .td4, .td5, .td6, .td7, .td8, .td9, .td10, .td11, .td12, .td13, .td14, .td15, .td16{
+    border: 3px solid #000000;
+}
+.table {
+    border: 4px solid #000000;
+    border-collapse: collapse;
+}
+.abbr1, .abbr2, .abbr7, .abbr8, .abbr9, .abbr10, .abbr15, .abbr16{
+    float: left;
+}
+.abbr3, .abbr4, .abbr5, .abbr6, .abbr11, .abbr12, .abbr13, .abbr14, .elem3, .elem4, .elem5, .elem6, .elem11, .elem12, .elem13, .elem14, .number1, .number2, .number7, .number8, .number9, .number10, .number15, .number16{
+    float: right;
+}
+.abbr1, .abbr2, .abbr7, .abbr8, .abbr9, .abbr10, .abbr15, .abbr16, .abbr3, .abbr4, .abbr5, .abbr6, .abbr11, .abbr12, .abbr13, .abbr14{
+    font-weight: bolder;
+    font-size: large;
+}
+.number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9, .number10, .number11, .number12, .number13, .number14, .number15, .number16{
+    font-weight: bold;
+}
+.td1, .td2, .td9, .td10{
+    background-color: deeppink;
+}
+.td3, .td4, .td5, .td6, .td11, .td12, .td13, .td14{
+    background-color: dodgerblue;
+}
+.td7, .td8, .td15, .td16{
+    background-color: gold;
+}
+.elem1, .elem2, .elem3, .elem4, .elem5, .elem6, .elem7, .elem8, .elem9, .elem10, .elem11, .elem12, .elem13, .elem14, .elem15, .elem16{
+    color: black;
+}
+
+
+

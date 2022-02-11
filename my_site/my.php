@@ -15,7 +15,10 @@ $now=getdate();
          <div class="logo"> <img src="img/logo.jpg" alt="LOGO" height="150" width="200">
          </div>
         <div class="logo_table">
-            <a href="../31.01.22/table.html" title="mini" target="_blank"><img src="img/logtable.png" width="120" height="120" alt="Таблица"></a>
+            <a href="header_table/table.html" title="mini" target="_blank"><img src="img/logtable.png" width="120" height="120" alt="Таблица"></a>
+        </div>
+        <div class="cycle">
+            <a href="cycle_HW/cycle.php" title="ЙА СДЕЛЯЛЪ" target="_blank"><img src="img/cycle2.png" alt="кружочек"></a>
         </div>
     </header>
     <?
