@@ -3,15 +3,11 @@
     grid-gap: 10px;
     background-color: black;
 }
-.header{
-    background-color: black;
-    display: grid;
-    grid-template-columns: minmax(150px, 200px) minmax(120px, 120px) minmax(120px, 120px);
-}
 .main{
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 1fr;
+    justify-content: start;
 }
 @media  all and (max-width: 720px) {
     .main{
@@ -23,7 +19,7 @@
 .foto{
     display:grid;
     grid-gap: 10px;
-    grid-template-columns: minmax(360px, 480px);
+    grid-template-columns: minmax(320px, 480px)
 }
 @media  all and (max-width: 720px) {
     .foto{
@@ -53,7 +49,7 @@
     font-family: cursive;
     font-size: 20px;
     grid-area: infotext;
-
+    justify-content: start;
 }
 .recom{
     color: lightgreen;

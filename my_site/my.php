@@ -11,26 +11,17 @@ $now=getdate();
     <title>Сафронов Иван</title>
 </head>
 <body class="body" >
-    <header class="header">
-         <div class="logo"> <img src="img/logo.jpg" alt="LOGO" height="150" width="200">
-         </div>
-        <div class="logo_table">
-            <a href="header_table/table.html" title="mini" target="_blank"><img src="img/logtable.png" width="120" height="120" alt="Таблица"></a>
-        </div>
-        <div class="cycle">
-            <a href="cycle_HW/cycle.php" title="ЙА СДЕЛЯЛЪ" target="_blank"><img src="img/cycle2.png" alt="кружочек"></a>
-        </div>
-    </header>
-    <?
-    $now = date('H');
-    if ($now < 8 or $now > 20 ) {
-        echo  '<img src="img/night.jpg" alt="no_n" height="200" width="480">';
-    }
-    elseif ($now < 20 or $now > 8) {
-        echo '<img src="img/morning.jpg" alt="no_m" height="200" width="480">';
-    }
+<? include 'header/header.php'; ?>
 
-    ?>
+<?
+$now = date('H');
+if ($now < 8 or $now > 20 ) {
+    echo  '<img src="img/night.jpg" alt="no_n" height="200" width="480">';
+}
+elseif ($now < 20 or $now > 8) {
+    echo '<img src="img/morning.jpg" alt="no_m" height="200" width="480">';
+}
+?>
     <main class="main">
     <div class="foto">
         <img src="img/ava.jpg" alt="foto" height="480" width="480">
@@ -69,5 +60,6 @@ $now=getdate();
         <div class="it_people7">Брэм Коэн. Американский программист, получивший свою популярность за разработку протокола BitTorrent. Именно благодаря ему у нас появилась возможность супер - быстрой передачи данных в сети</div>
         <div class="it_people8">Гвидо ван Россум — выдающийся голландский программист. Этот человек создал один из самых популярных и востребованных языков программирования Python.</div>
     </section>
+<? include 'footer/footer.php'; ?>
 </body>
 </html>

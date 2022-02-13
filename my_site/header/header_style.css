@@ -1,0 +1,4 @@
+.header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) minmax(120px, 120px) minmax(120px, 120px);}
