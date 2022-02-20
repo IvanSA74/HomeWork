@@ -6,23 +6,25 @@
 .main{
     background-color: black;
     display: grid;
-    grid-template-columns: 30% 1fr;
-    justify-content: start;
+    grid-gap: 10px;
+    grid-template-columns:30% 60%;
+    justify-content:space-between;
 }
-@media  all and (max-width: 720px) {
+@media  all and (max-width: 770px) {
     .main{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+
 }
 .foto{
     display:grid;
     grid-gap: 10px;
-    grid-template-columns: minmax(320px, 480px)
+    grid-template-columns: minmax(320px, 480px);
 }
 @media  all and (max-width: 720px) {
-    .foto{
+    .foto {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -36,26 +38,30 @@
     grid-template-areas:
             "textname textname"
             "infotext recom";
-    justify-items: center;
+    justify-items: stretch;
     }
+
 .textname{
     font-family: cursive;
     font-size: 70px;
     color: mediumseagreen;
     grid-area: textname;
+    align-items: center;
 }
 .infotext{
     color: lightgreen;
     font-family: cursive;
     font-size: 20px;
     grid-area: infotext;
-    justify-content: start;
+    justify-items: start;
+
 }
 .recom{
     color: lightgreen;
     font-family: cursive;
     font-size: 30px;
     grid-area: recom;
+    justify-items: end;
 }
 .container{
     display: grid;

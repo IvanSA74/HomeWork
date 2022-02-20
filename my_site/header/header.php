@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="header/header_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Сафронов Иван</title>
+    <title></title>
 </head>
 <header class="header">
     <div class="logo"> <img src="img/logo.jpg" alt="LOGO" height="150" width="200">

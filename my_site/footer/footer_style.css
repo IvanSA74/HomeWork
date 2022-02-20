@@ -1,0 +1,14 @@
+body {
+    font-size: x-large;
+    font-family: "Times New Roman";
+    color: green;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: center;
+}
